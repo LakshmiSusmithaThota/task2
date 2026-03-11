@@ -44,8 +44,18 @@ function registerValidate() {
     return false;
   }
 
+
+
+
+
+  // Dummy AJAX
+  setTimeout(() => {
+    document.getElementById("registerMsg").innerText =
+      "Registration successful (Dummy AJAX)";
+  }, 1000);
   
 
   return false;
 }
+
 
