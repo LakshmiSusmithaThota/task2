@@ -13,7 +13,14 @@ function loginValidate() {
     return false;
   }
 
+  // Dummy AJAX simulation
+  setTimeout(() => {
+    document.getElementById("loginMsg").innerText =
+      "Login successful (Dummy AJAX)";
+  }, 1000);
 
+  return false; // prevent page reload
+}
 
 // REGISTER VALIDATION
 function registerValidate() {
@@ -50,6 +57,7 @@ function registerValidate() {
 
   return false;
 }
+
 
 
 
